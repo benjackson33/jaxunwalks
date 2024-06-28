@@ -3,7 +3,7 @@ import "../styles/Nav.css";
 
 const Nav = () => {
   return (
-    <nav className="nav-bg-color mx-auto text-black rubik-font rubik-400">
+    <nav className="nav-bg-color mx-auto text-black rubik-font rubik-400 font-semibold">
       <div className="flex items-center justify-between mt-7 mr-10">
         <div className="flex flex-col items-center ml-10 mr-10">
           <img

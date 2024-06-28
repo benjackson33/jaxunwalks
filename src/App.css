@@ -3,7 +3,9 @@
   --colour-secondary: #ffd29d;
   --colour-accent: #f85e00;
 }
-
+body {
+  background-color: #f0ece8;
+}
 .rubik-font {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
