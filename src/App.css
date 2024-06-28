@@ -1,0 +1,51 @@
+:root {
+  --colour-primary: #918450;
+  --colour-secondary: #ffd29d;
+  --colour-accent: #f85e00;
+}
+
+.rubik-font {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.rubik-300 {
+  font-weight: 300;
+}
+
+.rubik-400 {
+  font-weight: 400;
+}
+
+.rubik-500 {
+  font-weight: 500;
+}
+
+.rubik-700 {
+  font-weight: 700;
+}
+
+.primary-text {
+  color: var(--colour-primary);
+}
+
+.secondary-text {
+  color: var(--colour-secondary);
+}
+
+.accent-text {
+  color: var(--colour-accent);
+}
+
+.primary-background {
+  background-color: var(--colour-primary);
+}
+
+.secondary-background {
+  background-color: var(--colour-secondary);
+}
+
+.accent-background {
+  background-color: var(--colour-accent);
+}

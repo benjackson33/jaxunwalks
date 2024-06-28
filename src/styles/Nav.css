@@ -1,0 +1,20 @@
+/* Nav.css */
+/* .nav-bg-color {
+  background-color: #918450; /* Dark background color */
+
+.nav-link {
+  padding: 0.5rem 1rem; /* Padding around text */
+  border: 2px solid transparent; /* Transparent bottom border */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.nav-link:hover {
+  border-color: #f85e00; /* Border color on hover for odd links (orange) */
+  background-color: #ffd29d;
+  color: #918450;
+  border-radius: 6px;
+}
+
+.nav-link:nth-child(even):hover {
+  border-color: #8263ff; /* Border color on hover for even links (light orange) */
+}
