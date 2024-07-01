@@ -8,7 +8,7 @@ const Nav = () => {
         <div className="flex flex-col items-center ml-10 mr-10">
           <img
             className="w-36 md:w-30"
-            src="/public/images/jaxun.png"
+            src="/public/images/logos/5.png"
             alt="logo"
           />
         </div>

@@ -32,8 +32,8 @@ const About = () => {
         {/* Right Column */}
         <div className="md:w-1/2">
           <img
-            src="/public/images/pexels-lum3n-44775-406014.jpeg"
-            alt="Dogs walking"
+            src="/public/images/dog-nose.png"
+            alt="Dog"
             className="object-cover w-full h-48 md:h-full rounded-lg"
           />
         </div>
