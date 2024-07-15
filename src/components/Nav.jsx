@@ -4,12 +4,13 @@ import "../styles/Nav.css";
 const Nav = () => {
   return (
     <nav className="nav-bg-color mx-auto text-black rubik-font rubik-400 font-semibold">
-      <div className="flex items-center justify-between mt-7 mr-10">
+      <div className="flex items-center justify-between mt-4 mr-10">
         <div className="flex flex-col items-center ml-10 mr-10">
           <img
             className="w-36 md:w-30"
-            src="/public/images/logos/5.png"
+            src="/public/logos/5.png"
             alt="logo"
+            href="/"
           />
         </div>
 
@@ -21,22 +22,18 @@ const Nav = () => {
               </Link>
             </li>
             <li>
-              <Link className="nav-link" to="/about">
-                About
+              <Link className="nav-link" to="/about-jaxun">
+                About Jaxun
               </Link>
             </li>
             <li>
-              <Link className="nav-link" to="/services">
-                Services
+              <Link className="nav-link" to="/dog-walking-services">
+                Services & Pricing
               </Link>
             </li>
+
             <li>
-              <Link className="nav-link" to="/enquiries">
-                Enquiries
-              </Link>
-            </li>
-            <li>
-              <a className="nav-link" href="mailto:walkies@gmail.com">
+              <a className="nav-link" href="/contact">
                 Contact
               </a>
             </li>
