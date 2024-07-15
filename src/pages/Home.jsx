@@ -21,7 +21,7 @@ const Home = () => {
           property="og:description"
           content="Friendly dog walking in Winchester, Hampshire"
         />
-        <meta property="og:image" content="/public/images/vizsla.jpeg" />
+        <meta property="og:image" content="/jaxunwalks/images/vizsla.jpeg" />
         <meta property="og:url" content="http://www.jaxundogs.co.uk/" />
         <link rel="canonical" href="http://www.jaxundogs.co.uk/" />
       </Helmet>
