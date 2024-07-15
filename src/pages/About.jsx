@@ -20,7 +20,7 @@ const About = () => {
           property="og:description"
           content="About Jaxun dog walking. Specialising in small pack walks, ensuring each dog receives the individualised attention they deserve. Our aim is to create a safe, fun, and enriching experience, turning every walk into an adventure."
         />
-        <meta property="og:image" content="/public/images/about-image.jpg" />
+        <meta property="og:image" content="/images/about-image.jpg" />
         <meta
           property="og:url"
           content="http://www.jaxundogs.co.uk/about-jaxun"
@@ -52,7 +52,7 @@ const About = () => {
           {/* Right Column */}
           <div className="md:w-3/4">
             <img
-              src="/public/images/dog-nose.png"
+              src="./images/dog-nose.png"
               alt="Dog"
               className="object-cover w-full h-48 md:h-full rounded-lg"
             />
