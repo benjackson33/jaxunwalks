@@ -7,9 +7,7 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
-// import Contact from "./pages/Contact";
-import Enquiries from "./pages/Enquiries";
-import Contact2 from "./pages/Contact2";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -20,8 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/dog-walking-services" element={<Services />} />
           <Route path="/about-jaxun" element={<About />} />
-          <Route path="/contact" element={<Contact2 />} />
-          <Route path="/enquiries" element={<Enquiries />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </>
     </Router>

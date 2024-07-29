@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Jaxun dog walking</title>
+        <title>About Jaxun Dog Walking</title>
         <meta
           name="description"
           content="About Jaxun dog walking. Specialising in small pack walks, ensuring each dog receives the individualised attention they deserve. Our aim is to create a safe, fun, and enriching experience, turning every walk into an adventure."
@@ -15,7 +15,7 @@ const About = () => {
           content="Pack walks, insured, first-aid, safe, fun, outdoors"
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="About Us - Jaxun dog walking" />
+        <meta property="og:title" content="About Us - Jaxun Dog Walking" />
         <meta
           property="og:description"
           content="About Jaxun dog walking. Specialising in small pack walks, ensuring each dog receives the individualised attention they deserve. Our aim is to create a safe, fun, and enriching experience, turning every walk into an adventure."
@@ -27,8 +27,10 @@ const About = () => {
         />
         <link rel="canonical" href="http://www.jaxundogs.co.uk/about-jaxun" />
       </Helmet>
+
+      {/* Main Container */}
       <div className="flex items-center justify-center mt-8 rubik-font rubik-400">
-        <div className="flex flex-col md:flex-row rounded-xl overflow-hidden w-10/11 md:w-10/11 mb-8 ml-4 mr-4">
+        <div className="flex flex-col md:flex-row rounded-xl overflow-hidden w-full md:w-10/11 mb-8 ml-4 mr-4">
           {/* Left Column */}
           <div className="md:w-1/2 p-4 md:p-6">
             <h2 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4">
@@ -38,7 +40,7 @@ const About = () => {
               each dog receives the individualised attention they deserve. Our
               aim is to create a <span className="primary-text">safe</span>,{" "}
               <span className="primary-text">fun</span>, and{" "}
-              <span className="primary-text">enriching </span>
+              <span className="primary-text">enriching</span>
               experience, turning every walk into an adventure.
             </h2>
             <p className="text-sm md:text-lg">
@@ -49,28 +51,32 @@ const About = () => {
               attentive, and enjoyable environment.
             </p>
           </div>
+
           {/* Right Column */}
-          <div className="md:w-3/4">
+          <div className="md:w-1/2">
             <img
               src="./images/dog-nose.png"
               alt="Dog"
-              className="object-cover w-full h-48 md:h-full rounded-lg"
+              className="w-full h-auto md:h-full object-cover rounded-lg"
+              loading="lazy"
             />
           </div>
         </div>
       </div>
 
+      {/* Second Container */}
       <div className="flex items-center justify-center mt-8 rubik-font rubik-400">
-        <div className="flex flex-col md:flex-row rounded-lg overflow-hidden w-10/11 md:w-10/11 mb-8 ml-4 mr-4">
+        <div className="flex flex-col md:flex-row rounded-lg overflow-hidden w-full md:w-10/11 mb-8 ml-4 mr-4">
           {/* Left Column */}
           <div className="md:w-1/3 p-4 md:p-6 mr-8">
             <img
               src="/public/images/IMG_3135copy.jpeg"
               alt="Dog"
-              className="object-cover w-full h-20 md:h-full rounded-lg"
+              className="w-full h-auto md:h-full object-cover rounded-lg"
               loading="lazy"
             />
           </div>
+
           {/* Right Column */}
           <div className="md:w-2/3 mt-7">
             <h2

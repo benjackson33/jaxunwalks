@@ -1,88 +1,78 @@
 import { useState } from "react";
 
-const Contact = () => {
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+const Contact2 = () => {
+  const [form, setForm] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Process form data here, e.g., send it to your server
-    console.log({ email, subject, message });
-    // You can use fetch or axios to send data to your server
+  const handleClick = () => {
+    setForm(!form);
   };
 
   return (
-    <section className="bg-white dark:bg-gray-900">
-      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-          Contact Us
-        </h2>
-        <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-          Send me a message!
-        </p>
-        <form onSubmit={handleSubmit} className="space-y-8">
-          <div>
-            <label
-              htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >
-              Your Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-              placeholder=""
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+    <div className="flex items-center justify-center mt-8 rubik-font rubik-400">
+      <div
+        className={`flex flex-col md:flex-row rounded-xl overflow-hidden w-full md:w-10/12 mb-8 ml-4 mr-4 ${
+          form ? "form-expanded" : "form-collapsed"
+        }`}
+      >
+        {/* Left Column */}
+        {!form && (
+          <div className="md:w-1/2 flex-shrink-0">
+            <img
+              src="/images/pexels-amalsanthosh-662417.jpeg"
+              alt="Dog"
+              className="w-full h-full object-cover md:object-contain rounded-lg"
             />
           </div>
-          <div>
-            <label
-              htmlFor="subject"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+        )}
+        {/* Right Column */}
+        <div className="flex flex-col md:w-1/2 p-4 md:p-6">
+          <h2 className="text-xl md:text-2xl font-semibold mb-4">
+            Get in touch!
+          </h2>
+          <h3 className="text-lg md:text-xl">07311269724</h3>
+          <h3 className="text-lg md:text-xl mb-2">
+            <a className="accent-text" href="mailto:jaxundogs@gmail.com">
+              jaxundogs@gmail.com
+            </a>
+          </h3>
+          <p className="mt-6 text-sm md:text-lg">
+            To arrange a meeting and a trial walk, please feel free to contact
+            me via email or phone, or fill in the enquiry form.
+          </p>
+          <div className="mt-8">
+            <h3
+              className="hover:cursor-pointer accent-text text-lg md:text-xl"
+              onClick={handleClick}
+              aria-expanded={form}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleClick();
+              }}
             >
-              Query
-            </label>
-            <input
-              type="text"
-              id="subject"
-              className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-              placeholder="Subject"
-              required
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
-            />
+              New client enquiry form
+            </h3>
+            {form && (
+              <div className="form-container mt-4 md:mt-6">
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSeyhFJooFOCz10CTndiSqR6i5GnxMp2LBcyl5nt5yGdd1bzXA/viewform?embedded=true"
+                  width="100%"
+                  height="600"
+                  frameBorder="0"
+                  marginHeight="0"
+                  marginWidth="0"
+                  title="New Client Enquiry Form"
+                  className="rounded-lg"
+                >
+                  Loading…
+                </iframe>
+              </div>
+            )}
           </div>
-          <div className="sm:col-span-2">
-            <label
-              htmlFor="message"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-            >
-              Your Message
-            </label>
-            <textarea
-              id="message"
-              rows="6"
-              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Tell me how I can help"
-              required
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-          >
-            Send message
-          </button>
-        </form>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Contact;
+export default Contact2;
